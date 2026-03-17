@@ -1,4 +1,5 @@
 ---
+import '../styles/global.css';
 ---
 
 <!doctype html>
@@ -27,233 +28,38 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Inter:wght@400&display=swap"
     />
   </head>
-  <body>
-    <main>
-      <div class="card">
-        <section class="intro">
-          <img src="/assets/logo.png" alt="Zandar Labs" class="logo" />
-          <h1>Zandar Labs</h1>
-          <p class="tagline">Ship. Iterate. Repeat.</p>
-          <p class="description">We build software that people love to use.</p>
+  <body class="min-h-screen flex items-center justify-center p-16 bg-[#fdfdfd] font-outfit text-[17pt] max-[736px]:p-8 max-[736px]:text-[12pt] max-[480px]:p-4 max-[360px]:p-2 max-[360px]:text-[11pt]">
+    <main class="w-full max-w-[50rem]">
+      <div class="bg-white rounded-[3rem] border-[3px] border-dashed border-[rgba(74,77,84,0.11)] text-center overflow-hidden">
+
+        <section class="flex flex-col items-center gap-6 p-16 border-b-[3px] border-dashed border-[rgba(74,77,84,0.11)] max-[736px]:py-14 max-[736px]:px-8 max-[360px]:py-[2.625rem] max-[360px]:px-6">
+          <img src="/assets/logo.png" alt="Zandar Labs" class="w-44 rounded-[3rem]" />
+          <h1 class="text-[#4a4d54] text-[4.25em] font-semibold leading-[1.25] tracking-[-0.05rem] max-[736px]:text-[3.5em]">Zandar Labs</h1>
+          <p class="text-[#4a4d54] text-[1em] font-semibold tracking-[0.25rem] uppercase">Ship. Iterate. Repeat.</p>
+          <p class="text-[#898b91] text-[1em] leading-[1.875]">We build software that people love to use.</p>
         </section>
 
-        <section class="products">
-          <div class="product">
-            <img src="https://aptakube.com/images/logo.png" alt="Aptakube" class="product-logo" />
-            <h2 class="product-name">Aptakube</h2>
-            <p class="product-subtitle">Multi-cluster Kubernetes desktop client</p>
-            <a href="https://aptakube.com/" target="_blank" rel="noopener noreferrer" class="product-link">
+        <section class="p-16 border-b-[3px] border-dashed border-[rgba(74,77,84,0.11)] max-[736px]:py-14 max-[736px]:px-8 max-[360px]:py-[2.625rem] max-[360px]:px-6">
+          <div class="inline-flex flex-col items-center gap-3 bg-[#f8f9fb] border border-solid border-[rgba(74,77,84,0.1)] rounded-[1.5rem] py-8 px-12 w-full">
+            <img src="https://aptakube.com/images/logo.png" alt="Aptakube" class="w-16 h-16 rounded-[1rem] object-contain" />
+            <h2 class="text-[#4a4d54] text-[1.5em] font-semibold tracking-[-0.03rem]">Aptakube</h2>
+            <p class="text-[#898b91] text-[0.9em] leading-[1.5]">Multi-cluster Kubernetes desktop client</p>
+            <a href="https://aptakube.com/" target="_blank" rel="noopener noreferrer" class="inline-block mt-2 text-[#2761f5] text-[0.9em] font-inter no-underline hover:underline">
               aptakube.com
             </a>
           </div>
         </section>
 
-        <section class="contact">
-          <a href="mailto:hello@zandarlabs.com">Get in touch!</a>
+        <section class="p-16 max-[736px]:py-14 max-[736px]:px-8 max-[360px]:py-[2.625rem] max-[360px]:px-6">
+          <a href="mailto:hello@zandarlabs.com" class="text-[#2761f5] font-inter text-[1em] underline transition-colors duration-200 hover:text-[#2a08ff] hover:no-underline">Get in touch!</a>
         </section>
 
-        <p class="registration">
+        <p class="text-[#898b91] text-[1em] leading-[1.875] px-16 pb-16 max-[736px]:px-8 max-[736px]:pb-14 max-[360px]:px-6 max-[360px]:pb-[2.625rem]">
           Zandar Labs SL is registered in Spain<br />
-          <small>CIF B22969513 · VAT ESB22969513</small>
+          <small class="text-[0.8em]">CIF B22969513 · VAT ESB22969513</small>
         </p>
+
       </div>
     </main>
   </body>
 </html>
-
-<style>
-  /* Reset */
-  *, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* Background */
-  body {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 4rem;
-    background-color: #fdfdfd;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024' width='1024' height='1024' preserveAspectRatio='none'%3E%3Ccircle cx='256' cy='256' r='4.01%25' fill='rgba(84,74,74,0.11)'/%3E%3Ccircle cx='768' cy='768' r='4.01%25' fill='rgba(84,74,74,0.11)'/%3E%3C/svg%3E");
-    background-size: 47px;
-    background-repeat: repeat;
-    font-family: "Outfit", sans-serif;
-    font-size: 17pt;
-  }
-
-  /* Card */
-  .card {
-    background: #fff;
-    border-radius: 3rem;
-    border: 3px dashed rgba(74, 77, 84, 0.11);
-    width: min(50rem, 100%);
-    text-align: center;
-    overflow: hidden;
-  }
-
-  /* Intro section */
-  .intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 4rem;
-    border-bottom: 3px dashed rgba(74, 77, 84, 0.11);
-  }
-
-  .logo {
-    width: 11rem;
-    border-radius: 3rem;
-  }
-
-  h1 {
-    color: #4a4d54;
-    font-size: 4.25em;
-    font-weight: 600;
-    line-height: 1.25;
-    letter-spacing: -0.05rem;
-  }
-
-  .tagline {
-    color: #4a4d54;
-    font-size: 1em;
-    font-weight: 600;
-    letter-spacing: 0.25rem;
-    text-transform: uppercase;
-  }
-
-  .description {
-    color: #898b91;
-    font-size: 1em;
-    line-height: 1.875;
-  }
-
-  /* Products section */
-  .products {
-    padding: 4rem;
-    border-bottom: 3px dashed rgba(74, 77, 84, 0.11);
-  }
-
-  .product {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
-    background: #f8f9fb;
-    border: 1px solid rgba(74, 77, 84, 0.1);
-    border-radius: 1.5rem;
-    padding: 2rem 3rem;
-    width: 100%;
-  }
-
-  .product-logo {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 1rem;
-    object-fit: contain;
-  }
-
-  .product-name {
-    color: #4a4d54;
-    font-size: 1.5em;
-    font-weight: 600;
-    letter-spacing: -0.03rem;
-  }
-
-  .product-subtitle {
-    color: #898b91;
-    font-size: 0.9em;
-    line-height: 1.5;
-  }
-
-  .product-link {
-    display: inline-block;
-    margin-top: 0.5rem;
-    color: #2761f5;
-    font-size: 0.9em;
-    font-family: "Inter", sans-serif;
-    text-decoration: none;
-  }
-
-  .product-link:hover {
-    text-decoration: underline;
-  }
-
-  /* Contact section */
-  .contact {
-    padding: 4rem;
-  }
-
-  .contact a {
-    color: #2761f5;
-    font-family: "Inter", sans-serif;
-    font-size: 1em;
-    text-decoration: underline;
-    transition: color 0.2s ease;
-  }
-
-  .contact a:hover {
-    color: #2a08ff;
-    text-decoration: none;
-  }
-
-  /* Registration footer */
-  .registration {
-    color: #898b91;
-    font-size: 1em;
-    line-height: 1.875;
-    padding: 0 4rem 4rem;
-  }
-
-  .registration small {
-    font-size: 0.8em;
-  }
-
-  /* Responsive */
-  @media (max-width: 736px) {
-    body {
-      padding: 2rem;
-      font-size: 12pt;
-    }
-
-    .intro,
-    .products,
-    .contact {
-      padding: 3.5rem 2rem;
-    }
-
-    .registration {
-      padding: 0 2rem 3.5rem;
-    }
-
-    h1 {
-      font-size: 3.5em;
-    }
-  }
-
-  @media (max-width: 480px) {
-    body {
-      padding: 1rem;
-    }
-  }
-
-  @media (max-width: 360px) {
-    body {
-      padding: 0.5rem;
-      font-size: 11pt;
-    }
-
-    .intro,
-    .products,
-    .contact {
-      padding: 2.625rem 1.5rem;
-    }
-
-    .registration {
-      padding: 0 1.5rem 2.625rem;
-    }
-  }
-</style>

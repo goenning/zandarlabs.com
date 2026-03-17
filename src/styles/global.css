@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --font-outfit: 'Outfit', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+@layer base {
+  body {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024' width='1024' height='1024' preserveAspectRatio='none'%3E%3Ccircle cx='256' cy='256' r='4.01%25' fill='rgba(84,74,74,0.11)'/%3E%3Ccircle cx='768' cy='768' r='4.01%25' fill='rgba(84,74,74,0.11)'/%3E%3C/svg%3E");
+    background-size: 47px;
+    background-repeat: repeat;
+  }
+}
