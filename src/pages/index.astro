@@ -1,0 +1,195 @@
+---
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zandar Labs</title>
+    <meta name="description" content="Software Development &amp; Consultancy." />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Zandar Labs" />
+    <meta property="og:title" content="Zandar Labs" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Software Development &amp; Consultancy." />
+    <meta property="og:image" content="https://zandarlabs.com/assets/images/card.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="800" />
+    <meta property="og:url" content="https://zandarlabs.com" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <link rel="canonical" href="https://zandarlabs.com/" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <section class="intro">
+          <img src="/assets/logo.png" alt="Zandar Labs" class="logo" />
+          <h1>Zandar Labs</h1>
+          <p class="tagline">Ship. Iterate. Repeat.</p>
+          <p class="description">We build software that people love to use.</p>
+        </section>
+
+        <section class="contact">
+          <a href="mailto:hello@zandarlabs.com">Get in touch!</a>
+        </section>
+
+        <p class="registration">
+          Zandar Labs SL is registered in Spain<br />
+          <small>CIF B22969513 · VAT ESB22969513</small>
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
+
+<style>
+  /* Reset */
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Background */
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    background-color: #fdfdfd;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024' width='1024' height='1024' preserveAspectRatio='none'%3E%3Ccircle cx='256' cy='256' r='4.01%25' fill='rgba(84,74,74,0.11)'/%3E%3Ccircle cx='768' cy='768' r='4.01%25' fill='rgba(84,74,74,0.11)'/%3E%3C/svg%3E");
+    background-size: 47px;
+    background-repeat: repeat;
+    font-family: "Outfit", sans-serif;
+    font-size: 17pt;
+  }
+
+  /* Card */
+  .card {
+    background: #fff;
+    border-radius: 3rem;
+    border: 3px dashed rgba(74, 77, 84, 0.11);
+    width: min(50rem, 100%);
+    text-align: center;
+    overflow: hidden;
+  }
+
+  /* Intro section */
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 4rem;
+    border-bottom: 3px dashed rgba(74, 77, 84, 0.11);
+  }
+
+  .logo {
+    width: 11rem;
+    border-radius: 3rem;
+  }
+
+  h1 {
+    color: #4a4d54;
+    font-size: 4.25em;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.05rem;
+  }
+
+  .tagline {
+    color: #4a4d54;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+  }
+
+  .description {
+    color: #898b91;
+    font-size: 1em;
+    line-height: 1.875;
+  }
+
+  /* Contact section */
+  .contact {
+    padding: 4rem;
+  }
+
+  .contact a {
+    color: #2761f5;
+    font-family: "Inter", sans-serif;
+    font-size: 1em;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+  }
+
+  .contact a:hover {
+    color: #2a08ff;
+    text-decoration: none;
+  }
+
+  /* Registration footer */
+  .registration {
+    color: #898b91;
+    font-size: 1em;
+    line-height: 1.875;
+    padding: 0 4rem 4rem;
+  }
+
+  .registration small {
+    font-size: 0.8em;
+  }
+
+  /* Responsive */
+  @media (max-width: 736px) {
+    body {
+      padding: 2rem;
+      font-size: 12pt;
+    }
+
+    .intro,
+    .contact {
+      padding: 3.5rem 2rem;
+    }
+
+    .registration {
+      padding: 0 2rem 3.5rem;
+    }
+
+    h1 {
+      font-size: 3.5em;
+    }
+  }
+
+  @media (max-width: 480px) {
+    body {
+      padding: 1rem;
+    }
+  }
+
+  @media (max-width: 360px) {
+    body {
+      padding: 0.5rem;
+      font-size: 11pt;
+    }
+
+    .intro,
+    .contact {
+      padding: 2.625rem 1.5rem;
+    }
+
+    .registration {
+      padding: 0 1.5rem 2.625rem;
+    }
+  }
+</style>
