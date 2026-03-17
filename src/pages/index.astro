@@ -37,6 +37,17 @@
           <p class="description">We build software that people love to use.</p>
         </section>
 
+        <section class="products">
+          <div class="product">
+            <img src="https://aptakube.com/images/logo.png" alt="Aptakube" class="product-logo" />
+            <h2 class="product-name">Aptakube</h2>
+            <p class="product-subtitle">Multi-cluster Kubernetes desktop client</p>
+            <a href="https://aptakube.com/" target="_blank" rel="noopener noreferrer" class="product-link">
+              aptakube.com
+            </a>
+          </div>
+        </section>
+
         <section class="contact">
           <a href="mailto:hello@zandarlabs.com">Get in touch!</a>
         </section>
@@ -120,6 +131,57 @@
     line-height: 1.875;
   }
 
+  /* Products section */
+  .products {
+    padding: 4rem;
+    border-bottom: 3px dashed rgba(74, 77, 84, 0.11);
+  }
+
+  .product {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    background: #f8f9fb;
+    border: 1px solid rgba(74, 77, 84, 0.1);
+    border-radius: 1.5rem;
+    padding: 2rem 3rem;
+    width: 100%;
+  }
+
+  .product-logo {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    object-fit: contain;
+  }
+
+  .product-name {
+    color: #4a4d54;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: -0.03rem;
+  }
+
+  .product-subtitle {
+    color: #898b91;
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+
+  .product-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #2761f5;
+    font-size: 0.9em;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+  }
+
+  .product-link:hover {
+    text-decoration: underline;
+  }
+
   /* Contact section */
   .contact {
     padding: 4rem;
@@ -158,6 +220,7 @@
     }
 
     .intro,
+    .products,
     .contact {
       padding: 3.5rem 2rem;
     }
@@ -184,6 +247,7 @@
     }
 
     .intro,
+    .products,
     .contact {
       padding: 2.625rem 1.5rem;
     }
